@@ -11,7 +11,7 @@ async def start(update: Update, context: CallbackContext) -> None:
         [
             InlineKeyboardButton(
                 "Открыть Mini App",
-                web_app={"url": "https://matrixq35.github.io/Minig-app/"}
+                web_app={"url": "https://matrixq35.github.io/Test/"}
             )
         ]
     ]
