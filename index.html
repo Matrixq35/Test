@@ -1,17 +1,41 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Telegram Mini App</title>
+    <title>Mini App</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div id="app">
-        <h1>Добро пожаловать!</h1>
-        <p>Этот Mini App интегрирован с Telegram</p>
-        <button id="startMining">Начать майнинг</button>
-    </div>
+    <header>
+        <h1>Добро пожаловать в наше Mini App!</h1>
+    </header>
+
+    <main>
+        <section id="content">
+            <p>Здесь вы можете взаимодействовать с приложением и получать токены!</p>
+            
+            <!-- Форма для получения токенов -->
+            <form id="getTokensForm">
+                <input type="text" id="username" placeholder="Введите ваше имя" required>
+                <button type="submit">Получить токены</button>
+            </form>
+
+            <div id="statusMessage"></div>
+        </section>
+
+        <section id="balance">
+            <h2>Ваш баланс: <span id="tokenBalance">0</span> токенов</h2>
+        </section>
+
+        <!-- Пример кнопки для дальнейших действий -->
+        <button id="getMoreTokens">Получить больше токенов</button>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Ваш проект</p>
+    </footer>
+
     <script src="script.js"></script>
 </body>
 </html>
